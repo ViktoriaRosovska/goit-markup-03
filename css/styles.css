@@ -21,15 +21,17 @@
 
 /** ============================== COMPONENTS ============================== **/
 .container {
-    width: 1128px;
-    margin-left: 156px;
-    margin-right: 156px;
-
-    /* outline: 1px solid blue; */
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 /* desing logo */
 .webstudio-logo {
-  display: inline-block;
+  margin-right: 76px;
+
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -40,8 +42,9 @@
   
   color: var(--primary-text-color);
 }
-.logo {
-  margin-right: 76px;
+.design-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .webstudio-logo > .design-logo { color: var(--accent-color); }
 .webstudio-logo.white-logo { color: var(--light-accent-color); }
@@ -54,6 +57,8 @@
 }
 .section {
   width: 1440px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
 .section-colored {
     background-color: var(--light-accent-color);
@@ -68,8 +73,8 @@
     list-style: none;  
 }
 .title {
+  margin-bottom: 8px;
   margin-top: 0;
-  margin-bottom: 8px;  
   
   font-weight: var(--font-weight-medium);
   font-size: var(--main-title-font-size);
@@ -94,21 +99,26 @@
   margin-bottom: 32px;
 }
 .list-img {
-  margin-bottom: 32px;
+  display: block;
 }
+.list-border {
+  padding-left: 16px;
+  padding-top: 32px;
 
+  border: 1px solid var(--alternative-color);
+  border-top: none;
+  background-color: var(--primary-white-color);
+}
 .button {
+  padding: 16px 32px;
   font-family: inherit;
   font-weight: var(--font-weight-medium);                                                 
   letter-spacing: 0.04em;
   
   border: 1px solid transparent;
   border-radius: 4px;
-
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, .08), 
-              0px 2px 2px rgba(0, 0, 0, .12);
     
   cursor: pointer;
 }
@@ -129,9 +139,11 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
-
-/** ============================== HEDER ============================== **/
-
+/** ============================== HEADER ============================== **/
+.section.header {
+  padding-top: 0;
+  padding-bottom: 0;
+} 
 .nav-list {
   align-items: center;
   
@@ -147,11 +159,13 @@ body {
   padding-left: 0;
   display: flex;
 }
+/* webstudio logo */
+/* margin-right: 76px; */
 .site-nav {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 332px;
-    margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 332px;
+  margin-left: 0;
 }
 .site-nav .link{
   padding: 24px 0;
@@ -160,32 +174,32 @@ body {
   font-weight: var(--font-weight-medium);    
   color: var(--primary-page-color);   
 }
-
 .site-nav .item {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 .site-nav .item:last-child{
-    margin-right: 0;
+  margin-right: 0;
 }
 .site-nav .current {
-    color: var(--accent-color);
-}
-.adress-list .item {
-    margin-right: 40px;
-    display: block;
+  color: var(--accent-color);
 }
 .header .adress-list {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
 }
 .header-container {
-    align-items: center;
- 
-    display: flex;
-}
+  align-items: center;
+  
+  display: flex;
 
+  border-bottom: 1px solid var(--alternative-color);
+}
+.adress-list .item {
+  margin-right: 40px;
+  display: block;
+}
 .adress-list .item:last-child {
     margin-right: 0;
 }
@@ -195,10 +209,12 @@ body {
 .adress-list .link:focus {
   color: var(--hover-accent-color);
 }
-/** ============================== /HEDER ============================== **/
+/** ============================== /HEADER ============================== **/
   
 /** ============================== HERO ============================== **/
-.hero { 
+section.hero {
+  padding-bottom: 188px; 
+  padding-top: 188px;
   background-color: var(--primary-page-color);
   color: var(--primary-white-color);
 }
@@ -213,32 +229,20 @@ body {
   line-height: 1.07;
   width: 494px;
  
-  display: block;
- 
   color: var(--accent-white-color);
-}
-.hero-container .button {
-  margin-bottom: 188px;
-  padding: 16px 32px;
-}
-.hero-container {
-  padding-top: 188px;
-  text-align: center;
-   
 }
  /** ============================== /HERO ============================== **/
  
 /** ============================== FEATURES ============================== **/
 .features-list {
   padding-left: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  
   margin-top: 0;
   margin-bottom: 0;
   
   display: flex;
   justify-content: space-between;
-
+  text-align: left;
 }
 .features-list .list-item {
   min-width: 264px;
@@ -253,18 +257,19 @@ body {
 /** ============================== /FEATURES ============================== **/
 
 /** ============================== WORK ============================== **/
+.section.work {
+  padding-top: 0;
+}
 .work-container .work-list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 120px;
   
   display: flex;
   gap: 24px;
 }
 .work-list .list-img {
   display: block;
-  margin-bottom: 0;  
 } 
 /** ============================== /WORK ============================== **/
  
@@ -283,16 +288,11 @@ body {
 
   background-color: var(--primary-white-color); 
 }
-.container.section-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 /** ============================== /TEAM ============================== **/
 
 /** ============================== FILTER ============================== **/
-section.filter {
+.section.filter {
   padding-top: 96px;
-  padding-bottom: 120px;
 } 
 .container .btnfilter-list {
   margin-top: 0;
@@ -307,7 +307,7 @@ section.filter {
   margin-right: 24px; 
 }
 .btnfilter-list .list-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 .btnfilter {
   padding: 12px 24px;
@@ -341,21 +341,28 @@ section.filter {
   row-gap: 48px;
   column-gap: 24px;
 }
+.portfolio-list .list-border {
+    text-align: left;
+}
 /** ============================== /FILTER ============================== **/
 
 /** ============================== FOOTER ============================== **/
 .footer.section {
+  padding-bottom: 100px;
+  padding-top: 100px;  
   background-color: var(--primary-page-color);
   color: var(--alternative-color);
 }
 .footer-description {
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 264px;
-  text-align: left; 
+  text-align: left;
+}
+.webstudio-logo.white-logo {
+    margin-bottom: 16px;
+    display: block;
+    line-height: 1.3333;
 }
 .footer-description .paragraph {
-  margin-top: 16px;
   margin-bottom: 0;
 }
 /** ============================== /FOOTER ============================== **/
