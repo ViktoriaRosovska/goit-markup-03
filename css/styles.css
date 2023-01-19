@@ -185,7 +185,7 @@ body {
 
 .nav-list {
   align-items: center;
-
+  text-align: left;
   display: flex;
 }
 
