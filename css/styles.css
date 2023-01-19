@@ -198,6 +198,8 @@ body {
 
 .nav-list .site-nav {
   padding-left: 0;
+
+
   display: flex;
 }
 
@@ -234,7 +236,6 @@ body {
   margin-left: auto;
 
   display: flex;
-
 }
 
 .header-container {
