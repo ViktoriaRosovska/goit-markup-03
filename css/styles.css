@@ -301,15 +301,6 @@ section.hero {
   min-width: 264px;
 }
 
-.features-list .paragraph {
-  margin-top: 8px;
-  margin-bottom: 0;
-}
-
-.features-list .list-item:not(:first-child) {
-  padding-left: 24px;
-}
-
 /** ============================== /FEATURES ============================== **/
 
 /** ============================== WORK ============================== **/
